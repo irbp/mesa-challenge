@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="categories">
+        <item>All</item>
+        <item>Airport</item>
+        <item>Pubs</item>
+        <item>Restaurants</item>
+        <item>Shopping Malls</item>
+        <item>Supermarkets</item>
+    </string-array>
+</resources>

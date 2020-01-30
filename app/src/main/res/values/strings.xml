@@ -1,5 +1,19 @@
 <resources>
     <string name="app_name">Mesa Challenge</string>
-    <string name="facebook_app_id">182616289478475</string>
-    <string name="fb_login_protocol_scheme">fb182616289478475</string>
+    <string name="facebook_app_id" translatable="false">182616289478475</string>
+    <string name="fb_login_protocol_scheme" translatable="false">fb182616289478475</string>
+    <string name="radar">Radar</string>
+    <string name="list">List</string>
+    <string name="profile">Profile</string>
+    <string name="filter">Filter</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="create_route">Create Route</string>
+    <string name="categories">Categories</string>
+    <string name="cancel">Cancel</string>
+    <string name="location_error">Error getting current location</string>
+    <string name="user_information_error">Error retrieving user information</string>
+    <string name="login_error">Login error</string>
 </resources>

@@ -1,0 +1,57 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+android {
+    def globalConfiguration = rootProject.extensions.getByName("ext")
+
+    compileSdkVersion globalConfiguration["compile_sdk"]
+
+    defaultConfig {
+        minSdkVersion globalConfiguration["min_sdk"]
+        targetSdkVersion globalConfiguration["target_sdk"]
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+}
+
+dependencies {
+    def dependencies = rootProject.ext.dependencies
+
+    // Adding domain module
+    implementation project(":domain")
+
+    // Kotlin
+    implementation dependencies.kotlin
+
+    // Coroutine
+    implementation dependencies.coroutine
+    implementation dependencies.coroutine_android
+
+    // Koin
+    implementation dependencies.koin_android
+
+    // Retrofit
+    implementation dependencies.retrofit
+    implementation dependencies.retrofit_moshi_converter
+
+    // Moshi
+    implementation dependencies.moshi
+    kapt dependencies.moshi_codegen
+
+    // Room
+    implementation dependencies.room
+    implementation dependencies.room_ktx
+    kapt dependencies.room_compiler
+
+    // Dexter
+    implementation dependencies.dexter
+
+    // Facebook SDK
+    implementation dependencies.fb_sdk
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mesa Challenge</string>
+    <string name="list">Lista</string>
+    <string name="profile">Perfil</string>
+    <string name="radar">Radar</string>
+    <string name="filter">Filtrar</string>
+    <string name="create_route">Traçar Rota</string>
+    <string name="categories">Categorias</string>
+    <string name="cancel">Cancelar</string>
+    <string name="location_error">Erro ao obter a localização</string>
+    <string name="user_information_error">Erro ao obter informações do usuário</string>
+    <string name="login_error">Erro ao efetuar login</string>
+</resources>

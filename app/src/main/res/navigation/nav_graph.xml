@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/radar_page">
+    <fragment
+        android:id="@+id/radar_page"
+        android:name="com.italo.mesachallenge.fragment.RadarFragment"
+        android:label="@string/radar"
+        tools:layout="@layout/fragment_radar" />
+    <fragment
+        android:id="@+id/profile_page"
+        android:name="com.italo.mesachallenge.fragment.ProfileFragment"
+        android:label="@string/profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/list_page"
+        android:name="com.italo.mesachallenge.fragment.ListFragment"
+        android:label="@string/list"
+        tools:layout="@layout/fragment_list" />
+</navigation>
